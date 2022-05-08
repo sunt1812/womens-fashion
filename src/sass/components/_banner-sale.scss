@@ -1,0 +1,44 @@
+.banner-sale {
+    &__item {
+        position: relative;
+        margin-top: 3rem;
+        &__images {
+            overflow: hidden;
+            &:hover img {
+                transform: scale(1.2);
+            }
+            img {
+                transition: all 6s ease-out;
+            }
+        }
+        &__content {
+            position: absolute;
+            bottom: 5rem;
+            padding: 0rem 5rem;
+            @include mobile {
+                bottom: 2rem;
+                padding: 0 2rem;
+            }
+            &__subtitle {
+                display: inline-block;
+                background-color: $second-color;
+                color: $txt-main-color;
+                font-weight: 600;
+                padding:  .5rem;
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+                cursor: text;
+                @include tablet {
+                    margin-bottom: 1rem;
+                    font-size: 1.4rem;
+                }
+            }
+            &__title {
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+                color: $main-color;
+                cursor: text;
+            }
+        }
+    }
+}

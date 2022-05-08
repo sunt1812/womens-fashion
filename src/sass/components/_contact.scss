@@ -1,0 +1,97 @@
+.contact {
+    background-color: $hong;
+    padding: 3rem 0;
+    @include mobile {
+        padding: 1rem 0;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        @include mobile {
+            display: inline-block;
+        }
+    }
+    &__email {
+        background-repeat: no-repeat;
+        background-image: url(//theme.hstatic.net/1000249198/1000523381/14/icon_footer.png?v=359);
+        background-position: 0;
+        background-size: 20px;
+        padding-left: 35px;
+        padding-right: 10px;
+        height: 20px;
+        line-height: 24px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        @include tablet {
+            padding-left: 2.5rem;
+        }
+        @include mobile {
+            padding-left: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        h5 {
+            color: $main-color;
+            font-size: 1.6rem;
+            margin-right: 4rem;
+            @include tablet {
+                margin-right: 0;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    &__input-group {
+        flex: 1;
+        position: relative;
+        input {
+            border: none;
+            background-color:#fbfbfb;
+            padding: 1.4rem 1.5rem;
+            width: 100%;
+            outline: none;
+            font-size: 1.4rem;
+        }
+        button {
+            position: absolute;
+            right: 0;
+            border: unset;
+            height: 100%;
+        }
+    }
+    &__phone {
+        width: 30%;
+        margin-left: 2rem;
+        @include tablet {
+
+        }
+        @include mobile {
+            width: unset;
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+        i {
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            border-radius: 50%;
+            background-color: #000;
+            color: $txt-white;
+            text-align: center;
+            font-size: 2rem;
+            margin-right: 1rem;
+            @include tablet {
+                width: 2.2rem;
+                height: 2.2rem;
+                line-height: 2.2rem;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+        &__number {
+            color: red;
+            font-size: 1.8rem;
+            margin-left: 2rem;
+        }
+    }
+}

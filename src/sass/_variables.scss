@@ -1,0 +1,54 @@
+$main-bg: #fff;
+$bg:#f3f3f3;
+$gray:#808284;
+$main-color: #fb017c;
+$second-color:#fe8ea6;
+$pink:#f94c43;
+$xam:#f5f5f5;
+$hong:#ffbecc;
+
+$txt-main-color: #383838;
+$txt-second-color: #8d8d8d;
+$txt-white: #fff;
+
+$btn-main-bg: $main-color;
+$btn-main-color: #fff;
+
+$header-height: 170px;
+$header-tablet-height: 70px;
+$header-mobile-height: 40px;
+$header-shrink-height: 70px;
+
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$colors: (
+    "p1": #ed9a9a,
+    "p2": #ffff38,
+    "p3": #d2dae2,
+    "p4": #6060f0,
+    "p5": #05ad48,
+    "p6": #f53b57,
+    "p7": #0fbcf9,
+    "p8": #000000,
+    "p9": #ffffff,
+    "p10": #f70d0d,
+    "p11": #8f0668,
+    "p12": #6ab04c,
+    "p13": #0c2461,
+    "p14": #f04705,
+    "p15": #29fcb2,
+    "p16": #eb7f26,
+    "p17": #422604,
+    "p18": #fafabe,
+    // "blue": #4267b2,
+    // "orange": #fbb96b,
+    // "pink": #fe7e73,
+    // "white": #fff,
+    // "black": #000,
+    // "main": $main-color,
+);
+
+$mobile-width: 767px;
+$tablet-width: 1023px;
+
+$numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8);

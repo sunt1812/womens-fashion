@@ -1,0 +1,162 @@
+.catalog {
+    &__breadcrumb {
+        background-color:rgb(254 172 190);
+        &__content {
+            padding: 1.5rem 0rem;
+            a {
+                margin-right: 1rem;
+                text-transform: capitalize;
+                &:last-child {
+                    color: $txt-white;
+                }
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .container {
+        display: flex;
+        gap: 2rem;
+        @include tablet {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+    &__filter {
+        padding:5rem 0;
+        width:25%;
+        @include tablet {
+            width: 100%;
+            padding: 2rem 0;
+        }
+        &__widget {
+            &__title {
+                padding: 1rem;
+                background-color: $hong;
+                margin-bottom: 1rem;
+                color: $main-color;
+                font-weight: 500;
+                font-size: 1.6rem;
+            }
+            &__content {
+                max-height: 60rem;
+                overflow: hidden;
+                transition: all .3s ease-in;
+                @include tablet {
+                    max-height: 0;
+                }
+                &.active {
+                    max-height:0;
+                    @include tablet {
+                        max-height: 60rem;
+                    }
+                }
+                &__item {
+                    margin-bottom: 1rem;
+                    padding: .5rem 2rem;
+                    border-bottom: 1px solid $xam;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+                &__title {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    margin: 1.5rem 0;
+                }
+                &__price {
+                    margin-bottom: 1rem;
+                }
+                &__colors {
+                    display: inline-block;
+                    .custom-checkbox  {
+                        &__checkmark {
+                            display: block;
+                            width: 3.5rem;
+                            height: 3.5rem;
+                            position: relative;
+                            i {
+                                color: $main-bg;
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                line-height: 2;
+                            }
+                        }
+                    }
+                }
+                &__size {
+                    display: inline-block;
+                    .custom-checkbox  {
+                        &__checkmark {
+                            display: block;
+                            width: 6rem;
+                            height: 5rem;
+                            position: relative;
+                            text-align: center;
+                            line-height: 3;
+                            margin-bottom: 1rem;
+                            font-size: 1.6rem;
+                            i {
+                                color: $main-bg;
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                line-height: 2;
+                            }
+                        }
+                        input:checked ~ .custom-checkbox__checkmark {
+                            background-color: $txt-main-color;
+                            color: $txt-white;
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__content {
+        padding:5rem 0;
+        width: 75%;
+        @include tablet {
+            width: 100%;
+            padding-top: 0;
+        }
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5rem;
+            @include tablet {
+                margin-bottom: 1rem;
+                justify-content: center;
+            }
+            &__title {
+                font-size: 3rem;
+                font-weight: 600;
+                color: $main-color;
+                @include tablet {
+                    font-size: 2rem;
+                }
+            }
+            &__select {
+                border: none;
+                border-bottom: 1px solid $txt-main-color;
+                padding-bottom: 0.5rem;
+                color: $txt-second-color;
+                font-size: 1.5rem;
+                cursor: pointer;
+                outline: none;
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+}

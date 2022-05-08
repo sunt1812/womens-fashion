@@ -1,0 +1,56 @@
+.information {
+    &__bg {
+        position: relative;
+        margin-top: 5rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.3);
+        }
+        &__content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 50%;
+            z-index: 9;
+            @include mobile {
+                width: 100%;
+                padding: 0rem 1.5rem;
+                text-align: center;
+            }
+            &__title {
+                color:$txt-white;
+                font-size: 5.5rem;
+                font-weight: 700;
+                margin-bottom: 3rem;
+                cursor: text;
+                @include mobile {
+                    font-size: 3.2rem;
+                    margin-bottom: 6rem;
+                }
+            }
+        }
+    }
+    &__content {
+        background-color:$bg;
+        padding: 10rem;
+        margin-top: 5rem;
+        @include tablet {
+            padding:  10rem 5rem;
+        }
+        &__title {
+            font-size: 1.5rem;
+            color: $main-color;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        &__desc {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

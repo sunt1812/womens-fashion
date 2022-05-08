@@ -1,0 +1,22 @@
+.section {
+    // margin-bottom: 80px;
+
+    & > * ~ * {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        @include tablet {
+            margin: 5rem 0;
+        }
+    }
+
+    &__title {
+        font-size: 3.7rem;
+        color: $main-color;
+        text-align: center;
+        margin: 5.7rem 0;
+        font-weight: 500;
+        @include tablet {
+            margin: 3.7rem 0;
+        }
+    }
+}

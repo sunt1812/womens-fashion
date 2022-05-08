@@ -1,0 +1,44 @@
+// .swiper:hover .swiper-button-prev,
+// .swiper:hover .swiper-button-next {
+//     visibility: visible;
+// }
+.swiper-button-prev,
+.swiper-button-next{
+    width: 6rem;
+    height: 6rem;
+    background-color: $main-bg;
+    border-radius: 50%;
+    @include tablet {
+        width: 4rem;
+        height: 4rem;
+
+    }
+}
+.swiper-button-prev{
+    left: 2rem;
+}
+.swiper-button-next {
+    right: 2rem;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    @include tablet {
+        font-size: 1.5rem;
+    }
+}
+.swiper-pagination-bullet {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color:transparent;
+    border: 3px solid #fff;
+    opacity: unset;
+}
+.swiper-pagination-bullet-active {
+    background-color:$main-bg;
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 10%;
+}
